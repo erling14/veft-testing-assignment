@@ -27,7 +27,7 @@ export const employeeSchema = Schema({
 });
 
 mongoose
-  .connect('mongodb://<yourDatabaseUrlHere>/veft-testing', {
+  .connect('mongodb://127.0.0.1/veft-testing', {
     useMongoClient: true,
   })
   .then(db => {
