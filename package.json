@@ -6,13 +6,16 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-watch index.js --presets env",
-    "test": "jest"
+    "test": "jest",
+    "consume": "babel-watch consume.js    "
   },
   "dependencies": {
+    "amqplib": "^0.5.1",
     "express": "4.16.2",
     "mongoose": "4.12.3"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "6.26.0",
     "babel-jest": "21.2.0",
     "babel-preset-env": "1.6.0",
@@ -25,5 +28,10 @@
     "transform": {
       "^.+\\.js?$": "babel-jest"
     }
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   }
 }
